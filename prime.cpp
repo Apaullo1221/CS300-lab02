@@ -1,5 +1,7 @@
 #include <iostream>
 
+//DEFINE THIS FUNCTION
+//prime(n) should return the nth prime number
 int prime(int n);
 
 int main() {
@@ -10,6 +12,3 @@ int main() {
     return 0;
 }
 
-int prime (int n){
-    return n;
-}
