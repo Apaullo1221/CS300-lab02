@@ -13,3 +13,26 @@ int main() {
 }
 
 
+int prime(int n) {
+    int count = 0;
+    int num = 2;
+
+    while (count < n) {
+        bool isPrime = true;
+
+        for (int i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            count++;
+        }
+
+        num++;
+    }
+
+    return num - 1;
+}
